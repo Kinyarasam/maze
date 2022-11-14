@@ -23,3 +23,4 @@ Please have a lot of fun doing this project!
 - Your functions should be a **maximum 40 lines** long (one statement per line)
 - Your functions should be **maximum 80 columns** long
 - No more than **5 functions** per file.
+# maze
