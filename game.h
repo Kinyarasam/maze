@@ -2,6 +2,7 @@
 #define _GAME_H_
 
 #include <stdio.h>
+#include <stdbool.h>
 #include <SDL2/SDL.h>
 
 /**
@@ -15,6 +16,7 @@ typedef struct SDL_Instance
 	SDL_Renderer *renderer;
 } SDL_Instance;
 
+bool ACTIVE_RUNNING;
 int init_instance(SDL_Instance *);
 
 #endif /* _GAME_H_ */
