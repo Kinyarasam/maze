@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "game.h"
 
 /**
  * main - Entry point.
