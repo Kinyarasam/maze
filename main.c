@@ -20,10 +20,13 @@ int main(void)
 	{
 		SDL_SetRenderDrawColor(instance.renderer, 0, 0, 0, 0);
 		SDL_RenderClear(instance.renderer);
-		draw_stuff(instance);
+
 		/**
-		 * TODO: Draw Something
+		 * events
 		 */
+		if (poll_events() == 1)
+			break;
+		draw_stuff(instance);
 		SDL_RenderPresent(instance.renderer);
 	}
 	return (0);
