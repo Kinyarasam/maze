@@ -19,6 +19,15 @@ typedef struct SDL_Instance
 bool ACTIVE_RUNNING;
 int init_instance(SDL_Instance *);
 void draw_stuff(SDL_Instance instance);
-int poll_events();
+int poll_events(void);
+
+/* library files */
+int _putchar(char c);
+void _puts(char *str);
+int _isupper(int c);
+char *_memset(char *s, char b, unsigned int n);
+char *_strcat(char *dest, char *src);
+int _isdigit(int c);
+char *_strncat(char *dest, char *src, int n);
 
 #endif /* _GAME_H_ */
