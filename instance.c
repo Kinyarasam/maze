@@ -3,14 +3,17 @@
 /**
  * init_instance - Initialisation
  * @instance: pointer to the instance.
+ *
+ * Return: Always 0. (Success)
+ *	otherwise, 1
  */
 int init_instance(SDL_Instance *instance)
 {
 	/* Initialise SDL */
 	if (SDL_Init(SDL_INIT_VIDEO) != 0)
 	{
-		fprintf(stderr, "Unable to initialize SDL: \
-%s\n", SDL_GetError());
+		fprintf(stderr, "Unable to initialize SDL:i %s\n",
+				SDL_GetError());
 		return (1);
 	}
 

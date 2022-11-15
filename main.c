@@ -16,7 +16,7 @@ int main(void)
 		return (1);
 
 
-	while (ACTIVE_RUNNING == true)
+	while (ACTIVE_RUNNING)
 	{
 		SDL_SetRenderDrawColor(instance.renderer, 0, 0, 0, 0);
 		SDL_RenderClear(instance.renderer);
